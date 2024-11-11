@@ -1,0 +1,29 @@
+{
+  "name": "@coder-pioneers/auth",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@coder-pioneers/core": "^0.0.4",
+    "@angular/common": "^18.0.6",
+    "@angular/compiler": "^18.0.6",
+    "@angular/core": "^18.0.6",
+    "@angular/forms": "^18.0.6",
+    "bootstrap-icons": "^1.11.3",
+    "notyf": "^3.10.0"
+  },
+  "dependencies": {
+
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuhammedNurAlsammour/coder-pioneers-libs.git"
+  },
+  "keywords": [
+    "angular",
+    "authentication",
+    "auth"
+  ],
+  "author": "Muhammed Nur Alsammour",
+  "license": "MIT"
+}

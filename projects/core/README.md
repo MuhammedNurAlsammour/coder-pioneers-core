@@ -1,210 +1,208 @@
-# Core Library
+# CoderPioneers Core Library
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+<p align="center">
+  <img src="path-to-your-logo.png" alt="CoderPioneers Core Library" width="200"/>
+  <br>
+  <i>A powerful Angular utility library for modern web applications</i>
+  <br>
+</p>
 
-## Features
+<p align="center">
+  <a href="#english">English</a> |
+  <a href="#arabic">العربية</a> |
+  <a href="#turkish">Türkçe</a>
+</p>
 
-- **Alert Service**: Built-in alert service for handling application notifications
-- **Component Generation**: Quick scaffolding for new components
-- **Comprehensive Testing**: Unit testing setup with Karma
-
-## Code Scaffolding
-
-### Generate Basic Components
-```bash
-ng generate component component-name --project core
-```
-
-### Generate Alert Service
-```bash
-ng generate service alert --project core
-```
-
-Example usage of Alert Service:
-```typescript
-import { AlertService } from './services/alert.service';
-
-export class YourComponent {
-  constructor(private alertService: AlertService) {}
-  
-  showAlert() {
-    this.alertService.show('Operation successful!', 'success');
-  }
-}
-```
-
-You can also generate other elements:
-```bash
-ng generate directive|pipe|service|class|guard|interface|enum|module --project core
-```
-
-> Note: Don't forget to add `--project core` or else it will be added to the default project in your `angular.json` file.
-
-## Build
-
-Run `ng build core` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-1. Build your library:
-   ```bash
-   ng build core
-   ```
-2. Navigate to dist folder:
-   ```bash
-   cd dist/core
-   ```
-3. Publish to npm:
-   ```bash
-   npm publish
-   ```
-
-## Running Unit Tests
-
-Run `ng test core` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further Help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="center">
+  <a href="https://www.npmjs.com/package/@coder-pioneers/core"><img src="https://img.shields.io/npm/v/@coder-pioneers/core.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@coder-pioneers/core"><img src="https://img.shields.io/npm/dm/@coder-pioneers/core.svg" alt="npm downloads"></a>
+  <a href="https://github.com/your-repo/LICENSE"><img src="https://img.shields.io/github/license/your-repo.svg" alt="license"></a>
+</p>
 
 ---
 
-# المكتبة الأساسية
+<h1 id="english">English</h1>
 
-تم إنشاء هذه المكتبة باستخدام [Angular CLI](https://github.com/angular/angular-cli) الإصدار 17.3.0.
+## 📋 Overview
 
-## المميزات
+CoderPioneers Core is a comprehensive Angular utility library providing essential services and components for modern web applications. Built with Angular 18.0.6, it offers a robust foundation for rapid application development.
 
-- **خدمة التنبيهات**: خدمة تنبيهات مدمجة للتعامل مع إشعارات التطبيق
-- **إنشاء المكونات**: إنشاء سريع لهياكل المكونات الجديدة
-- **اختبار شامل**: إعداد اختبارات الوحدة مع Karma
+## ⭐ Key Features
 
-## هيكلة الكود
+- **🔔 Alert Service**: Advanced notification system with multiple types and customization options
+- **🎨 UI Components**: Ready-to-use, customizable UI components
+- **🧪 Testing Utilities**: Comprehensive testing setup with Karma
+- **🔧 Development Tools**: Enhanced development workflow tools
 
-### إنشاء المكونات الأساسية
+## 🚀 Installation
+
 ```bash
-ng generate component component-name --project core
+npm install @coder-pioneers/core
 ```
 
-### إنشاء خدمة التنبيهات
-```bash
-ng generate service alert --project core
-```
+## 📖 Usage
 
-مثال على استخدام خدمة التنبيهات:
+### Alert Service
+
 ```typescript
-import { AlertService } from './services/alert.service';
+import { AlertService } from '@coder-pioneers/core';
 
+@Component({
+  // ...
+})
 export class YourComponent {
   constructor(private alertService: AlertService) {}
   
-  showAlert() {
-    this.alertService.show('تمت العملية بنجاح!', 'success');
+  showNotification() {
+    this.alertService.success('Operation completed successfully!');
+    // Other methods: error(), warning(), info()
   }
 }
 ```
 
-يمكنك أيضًا إنشاء عناصر أخرى:
+## 🛠️ Development
+
+### Generate Components
+
 ```bash
-ng generate directive|pipe|service|class|guard|interface|enum|module --project core
+ng generate component my-component --project core
 ```
 
-> ملاحظة: لا تنس إضافة `--project core` وإلا سيتم إضافته إلى المشروع الافتراضي في ملف `angular.json` الخاص بك.
+### Generate Services
 
-## البناء
+```bash
+ng generate service my-service --project core
+```
 
-قم بتشغيل `ng build core` لبناء المشروع. سيتم تخزين ملفات البناء في مجلد `dist/`.
+## 🏗️ Building
 
-## النشر
+```bash
+ng build core
+```
 
-1. قم ببناء المكتبة:
-   ```bash
-   ng build core
-   ```
-2. انتقل إلى مجلد dist:
-   ```bash
-   cd dist/core
-   ```
-3. النشر على npm:
-   ```bash
-   npm publish
-   ```
+## 📦 Publishing
 
-## تشغيل اختبارات الوحدة
-
-قم بتشغيل `ng test core` لتنفيذ اختبارات الوحدة عبر [Karma](https://karma-runner.github.io).
-
-## المزيد من المساعدة
-
-للحصول على مزيد من المساعدة حول Angular CLI، استخدم `ng help` أو قم بزيارة صفحة [نظرة عامة ومرجع أوامر Angular CLI](https://angular.io/cli).
+```bash
+cd dist/core
+npm publish
+```
 
 ---
 
-# Çekirdek Kütüphane
+<h1 id="arabic">العربية</h1>
 
-Bu kütüphane, [Angular CLI](https://github.com/angular/angular-cli) sürüm 17.3.0 ile oluşturulmuştur.
+## 📋 نظرة عامة
 
-## Özellikler
+مكتبة CoderPioneers Core هي مكتبة أدوات Angular شاملة توفر خدمات ومكونات أساسية لتطبيقات الويب الحديثة. تم بناؤها باستخدام Angular 18.0.6، وتوفر أساسًا قويًا للتطوير السريع للتطبيقات.
 
-- **Uyarı Servisi**: Uygulama bildirimlerini yönetmek için yerleşik uyarı servisi
-- **Bileşen Oluşturma**: Yeni bileşenler için hızlı iskelet yapı oluşturma
-- **Kapsamlı Test**: Karma ile birim testi kurulumu
+## ⭐ المميزات الرئيسية
 
-## Kod İskeleti Oluşturma
+- **🔔 خدمة التنبيهات**: نظام إشعارات متقدم مع أنواع متعددة وخيارات تخصيص
+- **🎨 مكونات واجهة المستخدم**: مكونات جاهزة للاستخدام وقابلة للتخصيص
+- **🧪 أدوات الاختبار**: إعداد اختبار شامل مع Karma
+- **🔧 أدوات التطوير**: أدوات محسنة لسير عمل التطوير
 
-### Temel Bileşenleri Oluşturma
+## 🚀 التثبيت
+
 ```bash
-ng generate component component-name --project core
+npm install @coder-pioneers/core
 ```
 
-### Uyarı Servisini Oluşturma
-```bash
-ng generate service alert --project core
-```
+## 📖 الاستخدام
 
-Uyarı Servisi kullanım örneği:
+### خدمة التنبيهات
+
 ```typescript
-import { AlertService } from './services/alert.service';
+import { AlertService } from '@coder-pioneers/core';
 
+@Component({
+  // ...
+})
 export class YourComponent {
   constructor(private alertService: AlertService) {}
   
-  showAlert() {
-    this.alertService.show('İşlem başarılı!', 'success');
+  showNotification() {
+    this.alertService.success('تمت العملية بنجاح!');
+    // الدوال الأخرى: error(), warning(), info()
   }
 }
 ```
 
-Diğer öğeleri de oluşturabilirsiniz:
+## 🛠️ التطوير
+
+### إنشاء المكونات
+
 ```bash
-ng generate directive|pipe|service|class|guard|interface|enum|module --project core
+ng generate component my-component --project core
 ```
 
-> Not: `--project core` eklemesini unutmayın, aksi takdirde `angular.json` dosyanızdaki varsayılan projeye eklenecektir.
+### إنشاء الخدمات
 
-## Derleme
+```bash
+ng generate service my-service --project core
+```
 
-Projeyi derlemek için `ng build core` komutunu çalıştırın. Derleme çıktıları `dist/` dizininde saklanacaktır.
+---
 
-## Yayınlama
+<h1 id="turkish">Türkçe</h1>
 
-1. Kütüphanenizi derleyin:
-   ```bash
-   ng build core
-   ```
-2. Dist klasörüne gidin:
-   ```bash
-   cd dist/core
-   ```
-3. npm'de yayınlayın:
-   ```bash
-   npm publish
-   ```
+## 📋 Genel Bakış
 
-## Birim Testlerini Çalıştırma
+CoderPioneers Core, modern web uygulamaları için temel hizmetler ve bileşenler sağlayan kapsamlı bir Angular yardımcı program kütüphanesidir. Angular 18.0.6 ile oluşturulmuş olup, hızlı uygulama geliştirme için sağlam bir temel sunar.
 
-[Karma](https://karma-runner.github.io) aracılığıyla birim testlerini çalıştırmak için `ng test core` komutunu kullanın.
+## ⭐ Temel Özellikler
 
-## Daha Fazla Yardım
+- **🔔 Uyarı Servisi**: Çoklu tip ve özelleştirme seçenekleriyle gelişmiş bildirim sistemi
+- **🎨 UI Bileşenleri**: Kullanıma hazır, özelleştirilebilir UI bileşenleri
+- **🧪 Test Araçları**: Karma ile kapsamlı test kurulumu
+- **🔧 Geliştirme Araçları**: Geliştirilmiş geliştirme iş akışı araçları
 
-Angular CLI hakkında daha fazla yardım almak için `ng help` komutunu kullanın veya [Angular CLI Genel Bakış ve Komut Referansı](https://angular.io/cli) sayfasını ziyaret edin.
+## 🚀 Kurulum
+
+```bash
+npm install @coder-pioneers/core
+```
+
+## 📖 Kullanım
+
+### Uyarı Servisi
+
+```typescript
+import { AlertService } from '@coder-pioneers/core';
+
+@Component({
+  // ...
+})
+export class YourComponent {
+  constructor(private alertService: AlertService) {}
+  
+  showNotification() {
+    this.alertService.success('İşlem başarıyla tamamlandı!');
+    // Diğer metodlar: error(), warning(), info()
+  }
+}
+```
+
+## 🛠️ Geliştirme
+
+### Bileşen Oluşturma
+
+```bash
+ng generate component my-component --project core
+```
+
+### Servis Oluşturma
+
+```bash
+ng generate service my-service --project core
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">Made with ❤️ by CoderPioneers Team</p>

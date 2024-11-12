@@ -1,7 +1,23 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "projects",  // تأكد من أن rootDir يشير إلى المجلد الجذري للمشاريع
+    "paths": {
+      "auth": [
+        "./dist/auth"
+      ],
+      "@coder-pioneers/auth": [
+        "projects/auth/src/public-api"
+      ],
+      "core": [
+        "./dist/core"
+      ],
+      "@coder-pioneers/core": [
+        "../../node_modules/@coder-pioneers/core"
+      ]
+
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
